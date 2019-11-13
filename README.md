@@ -6,8 +6,8 @@ sq capture_html_rex.cc packages.html "<dt&gt;.+?&gt;(.+?) - .+?</dt&gt;.+?<dd&gt
   
   to obtain only name of packages, issue:
   
-  sq capture_html_rex.cc packages.html "<dt>.+?>(.+?) - .+?</dt>.+?<dd>.+?Download:.+?>(.+?)<.+?</dd>" 1
+  sq capture_html_rex.cc packages.html "<dt&gt;.+?&gt;(.+?) - .+?</dt&gt;.+?<dd&gt;.+?Download:.+?&gt;(.+?)<.+?</dd&gt;" 1
   
   to obtain only hyperlinks in package.html, issue:
   
-  sq capture_html_rex.cc packages.html "<dt>.+?>(.+?) - .+?</dt>.+?<dd>.+?Download:.+?>(.+?)<.+?</dd>" 2
+  sq capture_html_rex.cc packages.html "<dt&gt;.+?&gt;(.+?) - .+?</dt&gt;.+?<dd&gt;.+?Download:.+?&gt;(.+?)<.+?</dd&gt;" 2
