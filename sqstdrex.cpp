@@ -1021,6 +1021,8 @@ SQBool sqstd_rex_searchrange(SQRex* exp,const SQChar* text_begin,const SQChar* t
 
 SQBool sqstd_rex_search(SQRex* exp,const SQChar* text, const SQChar** out_begin, const SQChar** out_end)
 {
+  for(int i=0;i<exp->_nsubexpr;i++)
+     exp->_matches[i].len = 0;	
   #ifdef _DEBUG
   printf("sqstd_rex_search executed!\n");
   #endif
