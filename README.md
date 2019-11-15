@@ -10,6 +10,6 @@ sq capture_html_rex.cc packages.html "<dt&gt;.+?&gt;(.+?) - .+?</dt&gt;.+?<dd&gt
   sq capture_html_rex.cc packages.html "<dt&gt;.+?&gt;(.+?) - .+?</dt&gt;.+?<dd&gt;.+?Download:.+?&gt;(.+?)<.+?</dd&gt;" 2
 
 
-
+Rex object should be reinitialized to get the correct result. Today I solve this problem by resetting match len to 0 when starting to search.
 
 
